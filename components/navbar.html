@@ -1,0 +1,27 @@
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+         href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">ANA SAYFA</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HAKKIMIZDA</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KÖŞEMİZ</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">İLETİŞİM</a>
+
+      <div class="w3-bar-item w3-right">
+          <form onsubmit="event.preventDefault();">
+              <input type="text"
+                     id="searchBox"
+                     class="w3-input w3-white"
+                     placeholder="Kitap veya yazar ara..."
+                     oninput="searchBooks(event)">
+              <button class="w3-button w3-black">
+                  <i class="fa fa-search"></i>
+              </button>
+          </form>
+          <div id="results"></div>
+      </div>
+  </div>
+</div>

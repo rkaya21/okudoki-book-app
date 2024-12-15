@@ -1,0 +1,14 @@
+.w3-third {
+    perspective: 1000px;
+}
+
+.w3-third img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.w3-third:hover img {
+    transform: rotateY(15deg) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+}
