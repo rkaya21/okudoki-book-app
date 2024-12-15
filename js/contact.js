@@ -13,7 +13,7 @@ function showMessage() {
   }
 
   /*
-  Inputları trimle temizle
+  Inputları temizle
   */
   const name = nameInput.value.trim();
   const email = emailInput.value.trim();

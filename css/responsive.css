@@ -1,0 +1,252 @@
+@media (max-width: 600px) {
+    /* single-page-authors.css */
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .w3-col.m6 {
+        margin-bottom: 20px;
+    }
+
+    .w3-wide {
+        font-size: 24px;
+    }
+
+    /* search.css  */
+    #results {
+        width: 100%;
+        right: auto;
+    }
+
+    .search-results {
+        max-height: 300px;
+    }
+
+    #searchBox {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* slider.css */
+    .prev, .next {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* Navbar için mobil düzenlemeler */
+    .w3-top {
+        position: fixed;
+        width: 100%;
+    }
+
+    /* Hamburger menü ve logo düzeni */
+    .w3-bar {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+        padding: 8px;
+    }
+
+    /* Logo stili */
+    .w3-bar a.logo {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    /* Hamburger menü butonu */
+    .w3-bar .w3-button.hamburger {
+        display: block;
+        padding: 8px 16px;
+        font-size: 24px;
+    }
+
+    /* Mobil menü */
+    #navDemo {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000;
+        z-index: 999;
+    }
+
+    #navDemo.w3-show {
+        display: block;
+    }
+
+    #navDemo a {
+        display: block;
+        padding: 12px 16px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Arama kutusu düzeni */
+    .search-container {
+        width: 100%;
+        padding: 8px;
+        background: #000;
+    }
+
+    #searchBox {
+        width: calc(100% - 40px);
+        margin: 8px;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    #results {
+        width: 100%;
+        top: 100%;
+        left: 0;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    /* Ana başlık */
+    .w3-wide {
+        font-size: 24px;
+        margin: 16px 0;
+    }
+
+    /* Slider ayarları */
+    .slideshow-container {
+        margin-top: 120px;
+        width: 100%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Navbar ayarları */
+    .w3-bar {
+        padding: 0 !important;
+    }
+
+    .hamburger {
+        order: 2;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .search-container {
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .menu-items {
+        display: none !important;
+    }
+
+    .w3-bar form {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .w3-bar form button {
+        margin-left: 8px;
+        padding: 8px;
+        height: 40px;
+        width: 40px;
+    }
+
+    #searchBox {
+        flex: 1;
+        height: 40px;
+        margin: 0;
+    }
+
+    #navDemo {
+        margin-top: 0;
+    }
+
+    #navDemo a {
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+/* Tablet cihaz */
+@media (min-width: 601px) and (max-width: 992px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #results {
+        width: 400px;
+    }
+
+    .prev {
+        left: 5%;
+    }
+
+    .next {
+        right: 5%;
+    }
+}
+
+/* Büyük ekran */
+@media (min-width: 993px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .w3-container.w3-content {
+        max-width: 1200px;
+    }
+}
+
+/* Yüksek çözünürlük */
+@media (min-width: 1400px) {
+    .slideshow-container {
+        max-width: 2400px;
+    }
+
+    .w3-container.w3-content {
+        max-width: 1400px;
+    }
+}
+
+/* Baskı */
+@media print {
+    body {
+        background: none;
+    }
+
+    .w3-bar,
+    .reference,
+    .prev,
+    .next {
+        display: none;
+    }
+
+    .w3-content {
+        margin-top: 0;
+    }
+
+    .book-item {
+        border: 1px solid #000;
+        break-inside: avoid;
+    }
+
+    .search-results {
+        display: none;
+    }
+}

@@ -22,7 +22,6 @@ async function loadAllComponents() {
   await loadComponent('about-content', 'about.html');
   await loadComponent('authors-content', 'authors.html');
   await loadComponent('contact-content', 'contact.html');
-  await loadComponent('messages-content', 'messages.html');
   await loadComponent('footer-content', 'footer.html');
 }
 
@@ -47,3 +46,30 @@ Sayfa yüklendiğinde bileşenleri
 document.addEventListener('DOMContentLoaded', () => {
   loadAllComponents();
 });
+
+/*
+Mobil menüyü için hamburger menü
+basıldıgında menüyü gösterir
+kapatıldıgında menüyü kapatır.
+*/
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x) {
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+}
+
+/*
+Sayfa kaydırıldığında menüyü kapat
+(mobil menü için)
+*/
+window.onscroll = function() {
+    var x = document.getElementById("navDemo");
+    if (x && x.className.indexOf("w3-show") !== -1) {
+        x.className = x.className.replace(" w3-show", "");
+    }
+};
